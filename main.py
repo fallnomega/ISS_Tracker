@@ -43,7 +43,7 @@ sunset_hour = get_hour(data["results"]["sunset"])
 
 # If the ISS is close to my current position
 # and it is currently dark
-# Then send me an email to tell me to look up.
+# Then send me an email to tell me to look  up.
 
 if (MY_LAT - 5 <= iss_latitude <= MY_LAT + 5 and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5) \
         and (my_hour >= sunset_hour or my_hour <= sunrise_hour):
